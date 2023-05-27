@@ -1,18 +1,23 @@
 package com.whiskey.alertsys
 
 import android.content.Intent
-import android.net.Uri
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.MediaController
-import android.widget.VideoView
+import androidx.appcompat.app.AppCompatActivity
+import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val currentUser = FirebaseAuth.getInstance().currentUser
+
+        if(currentUser != null) {
+            startActivity(Intent(this, AlertsActivity::class.java))
+            finish()
+        }
 
         var btnNext = findViewById<Button>(R.id.alert_btn)
         btnNext.setOnClickListener{

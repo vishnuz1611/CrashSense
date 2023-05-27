@@ -6,21 +6,39 @@
     android:layout_height="match_parent"
     tools:context=".AlertsActivity">
 
-    <TextView
-        android:id="@+id/title_text_view"
+    <RelativeLayout
+        android:id="@+id/title_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp"
-        android:text="Accident Videos"
-        android:textSize="24sp"
-        android:textStyle="bold" />
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/title_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accident Videos"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/logout_icon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/logout_btn" />
+
+    </RelativeLayout>
+
 
     <LinearLayout
         android:id="@+id/video_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_below="@id/title_text_view"
+        android:layout_below="@id/title_bar"
         android:padding="10dp">
 
     <ScrollView
