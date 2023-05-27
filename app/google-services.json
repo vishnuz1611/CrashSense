@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "605537394541",
+    "project_id": "alertsys-4227d",
+    "storage_bucket": "alertsys-4227d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:605537394541:android:356f8025e333b2cf468464",
+        "android_client_info": {
+          "package_name": "com.whiskey.alertsys"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "605537394541-uop69aq2vpb2j0pk1v4je5j912v65bpr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPW0csZD8Tomyzc3eLU1AuRs9FGyb1ze0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "605537394541-uop69aq2vpb2j0pk1v4je5j912v65bpr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
