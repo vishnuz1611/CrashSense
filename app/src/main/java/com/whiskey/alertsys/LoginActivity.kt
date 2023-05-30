@@ -37,7 +37,7 @@ class LoginActivity : AppCompatActivity() {
         mAuth.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
-                    val intent = Intent(this@LoginActivity, AlertsActivity::class.java)
+                    val intent = Intent(this@LoginActivity, AccListActivity::class.java)
                     finish()
                     startActivity(intent)
                 } else {

@@ -13,9 +13,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val currentUser = FirebaseAuth.getInstance().currentUser
+//        startActivity(Intent(this, AccListActivity::class.java))
 
         if(currentUser != null) {
-            startActivity(Intent(this, AlertsActivity::class.java))
+            startActivity(Intent(this, AccListActivity::class.java))
             finish()
         }
 
