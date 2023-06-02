@@ -15,10 +15,19 @@ class AccListActivity : AppCompatActivity() {
     private lateinit var dbref : DatabaseReference
     private lateinit var accidentRecyclerView: RecyclerView
     private lateinit var accidentList : ArrayList<Accident>
+    private lateinit var logoutBtn: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_acc_list)
+
+        logoutBtn = findViewById(R.id.logout_icon)
+        logoutBtn.setOnClickListener{
+            FirebaseAuth.getInstance().signOut()
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
 
         accidentRecyclerView = findViewById(R.id.accList)
         accidentRecyclerView.layoutManager = LinearLayoutManager(this)
@@ -43,6 +52,7 @@ class AccListActivity : AppCompatActivity() {
                     }
 
                     accidentRecyclerView.adapter = MyAdapter(accidentList)
+
                 }
 
             }

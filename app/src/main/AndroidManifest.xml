@@ -21,9 +21,6 @@
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".AlertsActivity"
-            android:exported="false" />
-        <activity
             android:name=".DetailsViewActivity"
             android:exported="false" />
         <activity
