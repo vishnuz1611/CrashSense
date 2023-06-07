@@ -21,6 +21,7 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="ALERTS"
+            android:textColor="@color/gray"
             android:textSize="24sp"
             android:textStyle="bold" />
 

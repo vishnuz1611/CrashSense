@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.whiskey.alertsys">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,15 +15,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Alertsys"
         tools:targetApi="31">
-
+        <activity
+            android:name=".AccPlayerActivity"
+            android:exported="false" />
         <activity
             android:name=".AccListActivity"
             android:exported="false" />
         <activity
             android:name=".LoginActivity"
-            android:exported="false" />
-        <activity
-            android:name=".DetailsViewActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
